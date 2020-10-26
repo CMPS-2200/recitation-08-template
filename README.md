@@ -1,1 +1,1 @@
-# recitation-10-template
+See `recitation-10.md`
