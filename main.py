@@ -8,7 +8,6 @@ def make_undirected_graph(edge_list):
         graph[e[1]].add(e[0])
     return graph
 
-
 def reachable(graph, start_node):
     """
     Returns:
@@ -30,8 +29,6 @@ def test_reachable():
     assert sorted(reachable(graph, 'E')) == ['E', 'F', 'G']
 
 
-
-
 def connected(graph):
     ### TODO
     pass
@@ -41,8 +38,6 @@ def test_connected():
     assert connected(graph) == True
     graph = make_undirected_graph([('A', 'B'), ('B', 'C'), ('C', 'D'), ('D', 'B'), ('E', 'F'), ('F', 'G')])
     assert connected(graph) == False
-
-
 
 def n_components(graph):
     """
